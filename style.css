@@ -1,17 +1,72 @@
-body{
-font-family: Arial;
-background:#f4f4f4;
-text-align:center;
+/* Palet Luffy: Merah, Kuning, Biru, Krem */
+:root {
+    --luffy-red: #D91E2E;
+    --luffy-yellow: #F2C84B;
+    --luffy-blue: #3262A6;
+    --luffy-cream: #F2E3D5;
+    --dark: #262626;
 }
-header{
-background:blue;
-color:white;
-padding:20px;
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--luffy-cream);
+    color: var(--dark);
+    margin: 0;
+    text-align: center;
 }
-button{
-padding:10px 20px;
-border:none;
-background:green;
-color:white;
-cursor:pointer;
+
+header {
+    background: var(--luffy-red);
+    color: white;
+    padding: 40px 20px;
+    border-bottom: 8px solid var(--luffy-yellow);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    border-top: 5px solid var(--luffy-blue);
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: var(--luffy-yellow);
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 0 #c4a03b;
+}
+
+button:hover {
+    background: var(--luffy-red);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 #a31622;
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 0 #a31622;
 }
